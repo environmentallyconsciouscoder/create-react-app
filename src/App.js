@@ -6,6 +6,62 @@ import image1 from "./images/image-1.jpg"
 import image2 from "./images/image-2.jpg"
 import image3 from "./images/image-3.jpg"
 
+import portfolio1 from "./images/portfolio_one.png"
+import portfolio2 from "./images/portfolio_two.png"
+import portfolio3 from "./images/portfolio_three.png"
+
+import portfolio4 from "./images/portfolio_four.png"
+import portfolio5 from "./images/portfolio_five.png"
+import portfolio6 from "./images/portfolio_six.png"
+
+const projects = [
+  {
+    name: 'Food Waste Monitoring System',
+    description:
+      'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses. Additionally, I have created a customer live feed to showcase the positive impact for our B2C clients.',
+    link: { href: 'https://softwarecornwall.org/news/cornish-start-up-greenkode-wins-place-on-european-accelerator-programme/', label: 'website' },
+    image: portfolio1
+  },
+  {
+    name: 'Business Intelligence System',
+    description:
+      'Headed an Innovate UK project, where I created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I sourced the data using ETL and developed the front end, back end, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.',
+    link: { href: 'https://limetrack.earth/', label: 'website' },
+    image: portfolio2
+  },
+  {
+    name: 'CRM System',
+    description:
+      'Developed a CRM system for onboarding new users and managing pilots. The automated onboarding process incorporates tasks such as sending emails, completing multiple forms, creating company accounts, and integrating QR codes. Additionally, I designed and built a dashboard to display various waste records for our clients.',
+    link: { href: 'https://scoopmybin.com/', label: 'website' },
+    image: portfolio3
+  }
+]
+
+const projectsTwo = [
+  {
+    name: 'Azure Project',
+    description:
+      'Configured and managed a Databricks workspace, including cluster setup, storage, and secure access using service principals. Created notebooks for ETL processes in the ingestion and processing layers, displaying results in reports and tables. Utilized various data patterns, such as full load and incremental load, to meet pipeline requirements. Employed Azure Data Factory to schedule and run notebooks for ingestion and transformations.',
+    link: { href: '', label: '' },
+    image: portfolio4
+  },
+  {
+    name: 'Financial Sentiment Analysis Platform',
+    description:
+      'Prototyped an AI-driven Financial Sentiment Analysis app for analyzing news articles in real time.',
+    link: { href: '', label: '' },
+    image: portfolio5
+  },
+  {
+    name: 'Auto ML Platform',
+    description:
+      'Prototyped a no-code platform for performing data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions',
+    link: { href: '', label: '' },
+    image: portfolio6
+  }
+]
+
 export function SocialLink({ icon: Icon, ...props }) {
   return (
     <a className="group -m-1 p-1" {...props}>
@@ -58,15 +114,57 @@ export function Container({ children, ...props }) {
   );
 }
 
+export function SimpleLayout({ title, intro, children }) {
+  return (
+    <Container className="mt-16 sm:mt-32">
+      <header className="max-w-2xl">
+        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          {title}
+        </h1>
+        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+          {intro}
+        </p>
+      </header>
+      {children && <div className="mt-16 sm:mt-20">{children}</div>}
+    </Container>
+  );
+}
+
+export function Card({ as, className, children }) {
+  let Component = as ?? 'div';
+
+  return (
+    <Component className={clsx(className, 'group relative flex flex-col items-start')}>
+      {children}
+    </Component>
+  );
+}
+
+Card.Link = function CardLink({ href, children }) {
+  return (
+    <a href={href} className="text-blue-500 hover:text-blue-700">
+      {children}
+    </a>
+  );
+};
+
+Card.Description = function CardDescription({ children }) {
+  return (
+    <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+      {children}
+    </p>
+  );
+};
+
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {[image1, image2, image3].map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
@@ -82,7 +180,7 @@ function Photos() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 function App() {
@@ -91,7 +189,7 @@ function App() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software Engineer, Data and AI Enthusiast.
+            Software Engineer, Founder, Data and AI Enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m James, a Software Engineer based in the United Kingdom. I’m passionate about building web and mobile applications.
@@ -108,6 +206,60 @@ function App() {
         </div>
       </Container>
       <Photos />
+
+      <SimpleLayout
+        title="Work Experiences"
+        >
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {projects.map((project) => (
+              <Card as="li" key={project.name}>
+                <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                </h2>
+                <Card.Description>{project.description}</Card.Description>
+                <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                  <img
+                    src={project.image}
+                    alt=""
+                    sizes="(max-width: 640px) 18rem, 11rem"
+                    className="w-full object-cover"
+                  />
+                  {/* <span className="ml-2">{project.link.label}</span> */}
+                </div>
+              </Card>
+            ))}
+          </ul>
+      </SimpleLayout>
+
+      <SimpleLayout
+        title="Side Projects"
+        >
+          <ul
+            role="list"
+            className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {projectsTwo.map((project) => (
+              <Card as="li" key={project.name}>
+                <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
+                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                </h2>
+                <Card.Description>{project.description}</Card.Description>
+                <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+                  <img
+                    src={project.image}
+                    alt=""
+                    sizes="(max-width: 640px) 18rem, 11rem"
+                    className="w-full object-cover"
+                  />
+                  {/* <span className="ml-2">{project.link.label}</span> */}
+                </div>
+              </Card>
+            ))}
+          </ul>
+      </SimpleLayout>
     </>
   );
 }
