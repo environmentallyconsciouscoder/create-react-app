@@ -194,10 +194,11 @@ function App() {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m James, a Software Engineer based in the United Kingdom. I’m passionate about building web and mobile applications.
             I have gained experience as a Full Stack Developer in several startups, which enabled me to acquire a diverse set of technical and non-technical skills.
-
-            I have experience and exposure to the following technologies: Node.js, Generative AI, Pandas, Machine Learning, Jest, React (hooks, context API, Redux),
-            CI/CD, Docker, TDD, Unit testing, OAuth, TypeScript, JUnit, Java, Spring Boot, MySQL, NoSQL, Flutter, GraphQL, Neo4j,
-            ETL, Azure Databricks, AWS Serverless, Python, and Fast API.
+            <br />
+            <div style={{height: "1rem"}}></div>
+              I have experience and exposure to the following technologies: Node.js, Generative AI, Pandas, Machine Learning, Jest, React (hooks, context API, Redux),
+              CI/CD, Docker, TDD, Unit testing, OAuth, TypeScript, JUnit, Java, Spring Boot, MySQL, NoSQL, Flutter, GraphQL, Neo4j,
+              ETL, Azure Databricks, AWS Serverless, Python, and Fast API.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://twitter.com/friendlycoding" aria-label="Follow on X" icon={XIcon} />
