@@ -18,47 +18,59 @@ const projects = [
   {
     name: 'Food Waste Monitoring System',
     description:
-      'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses. Additionally, I have created a customer live feed to showcase the positive impact for our B2C clients.',
+      'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses. The data is presented on a web application and also sent as alerts via email and SMS messages.',
     link: { href: 'https://softwarecornwall.org/news/cornish-start-up-greenkode-wins-place-on-european-accelerator-programme/', label: 'website' },
-    image: portfolio1
+    image: portfolio1,
+    skills:'React, Context API, CSS, SASS, HTML, AWS Serverless, AWS SDK, Node.js, chart libraries, AWS Lambda, API Gateway, DynamoDB, CloudWatch, Cron, AWS Cognito, AWS CodeCommit, AWS Amplify, CI/CD pipelines, SNS, and SES.',
+    linkTwo: 'https://drive.google.com/drive/folders/1yBIekBIWUp35pYzvqMzpGUWsYM2Onyb2'
   },
   {
     name: 'Business Intelligence System',
     description:
-      'Headed an Innovate UK project, where I created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I sourced the data using ETL and developed the front end, back end, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.',
+      'Created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I sourced the data using ETL and developed the front end, back end, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.',
     link: { href: 'https://limetrack.earth/', label: 'website' },
-    image: portfolio2
+    image: portfolio2,
+    skills: 'Flutter for web and mobile, Neo4j, GraphQL, BeautifulSoup, Python, Pandas, MVVM architecture',
+    linkTwo: 'https://drive.google.com/drive/folders/1gGHlSFepC0UCuIeZ7Wzp4fl0jWIY8e7M?usp=sharing'
   },
   {
     name: 'CRM System',
     description:
       'Developed a CRM system for onboarding new users and managing pilots. The automated onboarding process incorporates tasks such as sending emails, completing multiple forms, creating company accounts, and integrating QR codes. Additionally, I designed and built a dashboard to display various waste records for our clients.',
     link: { href: 'https://scoopmybin.com/', label: 'website' },
-    image: portfolio3
+    image: portfolio3,
+    skills:'React, Context API, Redux, CSS, SASS, HTML, AWS Serverless, AWS SDK, Node.js, chart libraries, AWS Lambda, API Gateway, DynamoDB, CloudWatch, Cron, AWS Cognito, AWS CodeCommit, AWS Amplify and CI/CD pipelines.',
+    linkTwo: 'https://drive.google.com/drive/folders/16F09UZWR7aPK_6ItPUFWPLHnBBvFjTgd?usp=sharing'
   }
 ]
 
 const projectsTwo = [
   {
-    name: 'Azure Project',
+    name: 'Pomodoro Application',
     description:
-      'Configured and managed a Databricks workspace, including cluster setup, storage, and secure access using service principals. Created notebooks for ETL processes in the ingestion and processing layers, displaying results in reports and tables. Utilized various data patterns, such as full load and incremental load, to meet pipeline requirements. Employed Azure Data Factory to schedule and run notebooks for ingestion and transformations.',
+      'A program designed to allow users to boost productivity with task tracking and a pomodoro time to record focus time. Built upon a REST API and integration with the Google Calendar Events API.',
     link: { href: '', label: '' },
-    image: portfolio4
+    image: portfolio4,
+    skills: 'TDD, Java, SpringBoot, React, Typescript and Google Calendar API',
+    linkTwo: 'https://github.com/orgs/TRGroupProject/repositories'
   },
   {
     name: 'Financial Sentiment Analysis Platform',
     description:
-      'Prototyped an AI-driven Financial Sentiment Analysis app for analyzing news articles in real time.',
+      'Prototyped an AI-driven Financial Sentiment Analysis app for analysing news articles in real time.',
     link: { href: '', label: '' },
-    image: portfolio5
+    image: portfolio6,
+    skills: 'Hugging Faces Transformers Library, Fast API, MySQL, Python, React, TypeScript',
+    linkTwo: 'https://github.com/orgs/Invest-Insight-App/repositories'
   },
   {
     name: 'Auto ML Platform',
     description:
-      'Prototyped a no-code platform for performing data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions',
+      'Prototyped a no-code platform for performing simple data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions',
     link: { href: '', label: '' },
-    image: portfolio6
+    image: portfolio5,
+    skills: 'Pandas, Open AI, Numpy, Fast API, Python, React, Scikit-learn',
+    linkTwo: 'https://github.com/orgs/Auto-ML-Platform/repositories'
   }
 ]
 
@@ -73,7 +85,7 @@ export function SocialLink({ icon: Icon, ...props }) {
 function XIcon(props) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
+      <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48C3 6.58 3.88 7.5 4.98 7.5C6.08 7.5 7 6.58 7 5.48C7 4.38 6.08 3.5 4.98 3.5ZM4 8H6V21H4V8ZM8.25 8H10.25V9.79H10.29C10.77 8.84 11.85 8 13.34 8C16.09 8 16.5 9.72 16.5 12.09V21H14.5V12.93C14.5 11.43 14.47 9.64 12.5 9.64C10.5 9.64 10.25 11.18 10.25 12.83V21H8.25V8Z"/>
     </svg>
   );
 }
@@ -195,30 +207,30 @@ function App() {
               My name is James. I am a Full Stack Developer with over 4 years of experience in building web and mobile applications. I have experience in designing and building applications from monoliths to microservices architecture, and I have worked with AWS serverless, MVVM, and MVC applications.
             <br />
             <div style={{height: "1rem"}}></div>
-              I have used a wide range of technologies and tools, including Node.js, React (Hooks, Context API, Redux), OAuth, TypeScript, Java, Spring Boot, MySQL, NoSQL, GraphQL, Flutter, Neo4j, Azure Databricks, Python, and FastAPI.
-            <br />
-            <div style={{height: "1rem"}}></div>
+              <p style={{fontWeight: "bold"}}>I have used a wide range of technologies and tools, including Node.js, React (Hooks, Context API, Redux), OAuth, TypeScript, Java, Spring Boot, MySQL, NoSQL, GraphQL, Flutter, Neo4j, Azure Databricks, Python, and FastAPI.</p>
+            {/* <br /> */}
+            {/* <div style={{height: "1rem"}}></div>
             I advocate for TDD and have experience in unit testing using frameworks such as jsdom, Jest, and JUnit. I prefer to keep my code DIY, applying SOLID principles and adopting good design patterns (structural, creational, and behavioral). Additionally, I manage my workflow using CI/CD and Docker. I possess a good understanding of data structures and algorithms.
-            <br />
-            <div style={{height: "1rem"}}></div>
+            <br /> */}
+            {/* <div style={{height: "1rem"}}></div>
             Throughout my career, I have a proven track record of managing and building projects. I consistently adopt a business-oriented approach to software development, ensuring I understand users' and data requirements and work agilely to meet their demands. I have experience working independently and in cross-functional teams (both technical and non-technical members) to deliver solutions. Additionally, I founded my own company where I built MVPs, pitched ideas, secured grants, hired and led teams, and managed multiple stakeholders including investors, board members, teams, and alpha testing (at venues such as O2 Stadium, Harvey Nichols, Francis Crick Institute, and more).
-            <br />
+            <br /> */}
             <div style={{height: "1rem"}}></div>
             During my career break, I enrolled in a bootcamp to learn machine learning and generative AI, which I have been integrating into software development. Currently, I am also learning Tailwind CSS.
             <br />
             <div style={{height: "1rem"}}></div>
             As I prepare to return to work, I am eager to find a steady job where I can settle down and contribute to the company's success. I am enthusiastic about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other.
             <br />
-            <div style={{height: "1rem"}}></div>
-            You can explore my GitHub page on by clicking <a href="https://bit.ly/3WkuP5M" target="_blank">here</a>
+            {/* <div style={{height: "1rem"}}></div>
+            You can explore my GitHub page on by clicking <a href="https://bit.ly/3WkuP5M" target="_blank">here</a> */}
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="https://twitter.com/friendlycoding" aria-label="Follow on X" icon={XIcon} />
-            <SocialLink
+          <SocialLink
               href="https://github.com/environmentallyconsciouscoder"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
+            <SocialLink href="https://www.linkedin.com/in/jcct100/" aria-label="Follow on Linkedin" icon={XIcon} />
           </div>
         </div>
       </Container>
@@ -234,9 +246,10 @@ function App() {
             {projects.map((project) => (
               <Card as="li" key={project.name}>
                 <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                  <Card.Link href={project.link.href} target="_blank">{project.name}</Card.Link>
                 </h2>
                 <Card.Description>{project.description}</Card.Description>
+                <Card.Description><p style={{fontWeight: "bold"}}>{project.skills}</p></Card.Description>
                 <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                   <img
                     src={project.image}
@@ -246,6 +259,7 @@ function App() {
                   />
                   {/* <span className="ml-2">{project.link.label}</span> */}
                 </div>
+                <Card.Description><a href={project.linkTwo} target="_blank">See More</a></Card.Description>
               </Card>
             ))}
           </ul>
@@ -261,9 +275,10 @@ function App() {
             {projectsTwo.map((project) => (
               <Card as="li" key={project.name}>
                 <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                  <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                  <Card.Link href={project.link.href} target="_blank">{project.name}</Card.Link>
                 </h2>
                 <Card.Description>{project.description}</Card.Description>
+                <Card.Description><p style={{fontWeight: "bold"}}>{project.skills}</p></Card.Description>
                 <div className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                   <img
                     src={project.image}
@@ -273,10 +288,13 @@ function App() {
                   />
                   {/* <span className="ml-2">{project.link.label}</span> */}
                 </div>
+                <Card.Description><a href={project.linkTwo} target="_blank">See GitHub</a></Card.Description>
               </Card>
             ))}
           </ul>
       </SimpleLayout>
+      <div style={{height: "10rem"}}></div>
+
     </>
   );
 }
