@@ -216,7 +216,7 @@ function App() {
             Throughout my career, I have a proven track record of managing and building projects. I consistently adopt a business-oriented approach to software development, ensuring I understand users' and data requirements and work agilely to meet their demands. I have experience working independently and in cross-functional teams (both technical and non-technical members) to deliver solutions. Additionally, I founded my own company where I built MVPs, pitched ideas, secured grants, hired and led teams, and managed multiple stakeholders including investors, board members, teams, and alpha testing (at venues such as O2 Stadium, Harvey Nichols, Francis Crick Institute, and more).
             <br /> */}
             <div style={{height: "1rem"}}></div>
-            During my career break, I enrolled in a bootcamp to learn machine learning and generative AI, which I have been integrating into software development. Currently, I am also learning Tailwind CSS.
+            During my career break, I enrolled in a bootcamp to learn machine learning and generative AI, which I have been integrating into software development.
             <br />
             <div style={{height: "1rem"}}></div>
             As I prepare to return to work, I am eager to find a steady job where I can settle down and contribute to the company's success. I am enthusiastic about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other.
