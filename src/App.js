@@ -230,7 +230,7 @@ function App() {
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
-            {/* <SocialLink href="https://www.linkedin.com/in/jcct100/" aria-label="Follow on Linkedin" icon={XIcon} /> */}
+            <SocialLink href="https://www.linkedin.com/in/jcct100/" aria-label="Follow on Linkedin" icon={XIcon} />
           </div>
         </div>
       </Container>
