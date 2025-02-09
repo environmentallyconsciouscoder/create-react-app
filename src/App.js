@@ -9,12 +9,21 @@ import image3 from "./images/image-3.jpg"
 import portfolio1 from "./images/portfolio_one.png"
 import portfolio2 from "./images/portfolio_two.png"
 import portfolio3 from "./images/portfolio_three.png"
-
 import portfolio4 from "./images/portfolio_four.png"
 import portfolio5 from "./images/portfolio_five.png"
 import portfolio6 from "./images/portfolio_six.png"
+import portfolio7 from "./images/portfolio_seven.png"
 
 const projects = [
+  {
+    name: 'Loopi eCommerce Site and P2P Platform',
+    description:
+      'Part of a team building the full-stack technologies for Loopi.com. Transforming the old website, Gothrift, to Loopi.com and also developing new functionalities for P2P marketplaces',
+    link: { href: 'https://loopi.com/', label: 'website' },
+    image: portfolio7,
+    skills:'Node.js, Next.js, React (Hooks, Context API, Redux, React Query), Tailwind CSS, OAuth, TypeScript, Fastify, tRPC, NoSQL, GraphQL, RESTful APIs, TDD, SST (Serverless Stack), and AWS.',
+    linkTwo: 'https://loopi.com/'
+  },
   {
     name: 'Food Waste Monitoring System',
     description:
@@ -204,10 +213,10 @@ function App() {
             Software Engineer, Founder, Data and AI Enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-              My name is James. I am a Full Stack Developer with over 4 years of experience in building web and mobile applications. I have experience in designing and building applications from monoliths to microservices architecture, and I have worked with AWS serverless, MVVM, and MVC applications.
+              Hey, my name is James. I have over five years of experience in software development. Throughout my career, I have built and managed projects with a strong track record of taking a business-oriented approach to product development, ensuring that I understand user and data requirements while working in an agile manner to meet demands. I have experience working both independently and within cross-functional teams, collaborating with technical and non-technical members to deliver solutions.
             <br />
             <div style={{height: "1rem"}}></div>
-              <p style={{fontWeight: "bold"}}>I have used a wide range of technologies and tools, including Node.js, React (Hooks, Context API, Redux), OAuth, TypeScript, Java, Spring Boot, MySQL, NoSQL, GraphQL, Flutter, Neo4j, Azure Databricks, Python, and FastAPI.</p>
+              <p style={{fontWeight: "bold"}}>My current tech stack includes Node.js, Next.js, React (Hooks, Context API, Redux, React Query), Tailwind CSS, OAuth, TypeScript, Fastify, tRPC, NoSQL, GraphQL, RESTful APIs, TDD, SST (Serverless Stack), and AWS.</p>
             {/* <br /> */}
             {/* <div style={{height: "1rem"}}></div>
             I advocate for TDD and have experience in unit testing using frameworks such as jsdom, Jest, and JUnit. I prefer to keep my code DIY, applying SOLID principles and adopting good design patterns (structural, creational, and behavioral). Additionally, I manage my workflow using CI/CD and Docker. I possess a good understanding of data structures and algorithms.
