@@ -13,6 +13,7 @@ import portfolio4 from "./images/portfolio_four.png"
 import portfolio5 from "./images/portfolio_five.png"
 import portfolio6 from "./images/portfolio_six.png"
 import portfolio7 from "./images/portfolio_seven.png"
+import portfolio8 from "./images/portfolio_eight.png"
 
 const projects = [
   {
@@ -20,7 +21,7 @@ const projects = [
     description:
       'Led FAQ Chatbot Development: Researched, designed, developed, and deployed an FAQ chatbot. Version 1 uses a rule-based system combined with AI from the Rasa open-source framework. The rule-based component provides options to guide users, while the AI predicts responses based on the questions asked. When someone asks a question, the AI compares it to trained examples and assigns a similarity score to predict the best response. The chatbot improves its conversations over time by training on conversational data.',
     link: { href: '', label: 'website' },
-    image: portfolio7,
+    image: portfolio8,
     skills:'Rasa open-source framework, Python, and React.js. Hosted on an AWS EC2 instance.',
     linkTwo: ''
   },
@@ -277,7 +278,7 @@ function App() {
                   />
                   {/* <span className="ml-2">{project.link.label}</span> */}
                 </div>
-                <Card.Description><a href={project.linkTwo} target="_blank">See More</a></Card.Description>
+                <Card.Description><a href={project.linkTwo} target="_blank">{project.linkTwo !== "" ? "See More": ""}</a></Card.Description>
               </Card>
             ))}
           </ul>
