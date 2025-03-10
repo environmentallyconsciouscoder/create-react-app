@@ -16,6 +16,15 @@ import portfolio7 from "./images/portfolio_seven.png"
 
 const projects = [
   {
+    name: 'Loopi FAQ Chatbot',
+    description:
+      'Led FAQ Chatbot Development: Researched, designed, developed, and deployed an FAQ chatbot. Version 1 uses a rule-based system combined with AI from the Rasa open-source framework. The rule-based component provides options to guide users, while the AI predicts responses based on the questions asked. When someone asks a question, the AI compares it to trained examples and assigns a similarity score to predict the best response. The chatbot improves its conversations over time by training on conversational data.',
+    link: { href: '', label: 'website' },
+    image: portfolio7,
+    skills:'Rasa open-source framework, Python, and React.js. Hosted on an AWS EC2 instance.',
+    linkTwo: ''
+  },
+  {
     name: 'Loopi eCommerce Site and P2P Platform',
     description:
       'Part of a team building the full-stack technologies for Loopi.com. Transforming the old website, Gothrift, to Loopi.com and also developing new functionalities for P2P marketplaces',
