@@ -216,7 +216,7 @@ function App() {
               Hey, my name is James. I have over five years of experience in software development. Throughout my career, I have built and managed projects with a strong track record of taking a business-oriented approach to product development, ensuring that I understand user and data requirements while working in an agile manner to meet demands. I have experience working both independently and within cross-functional teams, collaborating with technical and non-technical members to deliver solutions.
             <br />
             <div style={{height: "1rem"}}></div>
-              <p style={{fontWeight: "bold"}}>My current tech stack includes Node.js, Next.js, React (Hooks, Context API, Redux, React Query), Tailwind CSS, OAuth, TypeScript, Fastify, tRPC, NoSQL, GraphQL, RESTful APIs, TDD, SST (Serverless Stack), and AWS.</p>
+              <p style={{fontWeight: "bold"}}>My current tech stack includes Node.js, Next.js, React (Hooks, Context API, Redux, React Query), Tailwind CSS, OAuth, TypeScript, Fastify, tRPC, NoSQL, GraphQL, RESTful APIs, TDD, SST (Serverless Stack), FastAPI, Rasa, Python, and AWS.</p>
             {/* <br /> */}
             {/* <div style={{height: "1rem"}}></div>
             I advocate for TDD and have experience in unit testing using frameworks such as jsdom, Jest, and JUnit. I prefer to keep my code DIY, applying SOLID principles and adopting good design patterns (structural, creational, and behavioral). Additionally, I manage my workflow using CI/CD and Docker. I possess a good understanding of data structures and algorithms.
