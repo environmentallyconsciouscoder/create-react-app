@@ -1,6 +1,6 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import { Link } from 'react-router-dom'; // Assuming you're using react-router-dom for Link component
+// import { Link } from 'react-router-dom'; // Assuming you're using react-router-dom for Link component
 import clsx from 'clsx';
 import image1 from "./images/image-1.jpg"
 import image2 from "./images/image-2.jpg"
@@ -101,25 +101,25 @@ export function SocialLink({ icon: Icon, ...props }) {
   );
 }
 
-function XIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48C3 6.58 3.88 7.5 4.98 7.5C6.08 7.5 7 6.58 7 5.48C7 4.38 6.08 3.5 4.98 3.5ZM4 8H6V21H4V8ZM8.25 8H10.25V9.79H10.29C10.77 8.84 11.85 8 13.34 8C16.09 8 16.5 9.72 16.5 12.09V21H14.5V12.93C14.5 11.43 14.47 9.64 12.5 9.64C10.5 9.64 10.25 11.18 10.25 12.83V21H8.25V8Z"/>
-    </svg>
-  );
-}
+// function XIcon(props) {
+//   return (
+//     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+//       <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48C3 6.58 3.88 7.5 4.98 7.5C6.08 7.5 7 6.58 7 5.48C7 4.38 6.08 3.5 4.98 3.5ZM4 8H6V21H4V8ZM8.25 8H10.25V9.79H10.29C10.77 8.84 11.85 8 13.34 8C16.09 8 16.5 9.72 16.5 12.09V21H14.5V12.93C14.5 11.43 14.47 9.64 12.5 9.64C10.5 9.64 10.25 11.18 10.25 12.83V21H8.25V8Z"/>
+//     </svg>
+//   );
+// }
 
-function GitHubIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"
-      />
-    </svg>
-  );
-}
+// function GitHubIcon(props) {
+//   return (
+//     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+//       <path
+//         fillRule="evenodd"
+//         clipRule="evenodd"
+//         d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"
+//       />
+//     </svg>
+//   );
+// }
 
 export function ContainerOuter({ className, children, ...props }) {
   return (
@@ -187,32 +187,32 @@ Card.Description = function CardDescription({ children }) {
   );
 };
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
+// function Photos() {
+//   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2'];
 
-  return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3].map((image, imageIndex) => (
-          <div
-            key={image}
-            className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
-              rotations[imageIndex % rotations.length],
-            )}
-          >
-            <img
-              src={image}
-              alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+//   return (
+//     <div className="mt-16 sm:mt-20">
+//       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+//         {[image1, image2, image3].map((image, imageIndex) => (
+//           <div
+//             key={image}
+//             className={clsx(
+//               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
+//               rotations[imageIndex % rotations.length],
+//             )}
+//           >
+//             <img
+//               src={image}
+//               alt=""
+//               sizes="(min-width: 640px) 18rem, 11rem"
+//               className="absolute inset-0 h-full w-full object-cover"
+//             />
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
 function App() {
   return (
