@@ -217,7 +217,7 @@ function Photos() {
 function App() {
   return (
     <>
-      <Container className="mt-9">
+      {/* <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Software Engineer, Founder, Data and AI Enthusiast.
@@ -227,21 +227,6 @@ function App() {
             <br />
             <div style={{height: "1rem"}}></div>
               <p style={{fontWeight: "bold"}}>My current tech stack includes Node.js, Next.js, React (Hooks, Context API, Redux, React Query), Tailwind CSS, OAuth, TypeScript, Fastify, tRPC, NoSQL, GraphQL, RESTful APIs, TDD, SST (Serverless Stack), FastAPI, Rasa, Python, and AWS.</p>
-            {/* <br /> */}
-            {/* <div style={{height: "1rem"}}></div>
-            I advocate for TDD and have experience in unit testing using frameworks such as jsdom, Jest, and JUnit. I prefer to keep my code DIY, applying SOLID principles and adopting good design patterns (structural, creational, and behavioral). Additionally, I manage my workflow using CI/CD and Docker. I possess a good understanding of data structures and algorithms.
-            <br /> */}
-            {/* <div style={{height: "1rem"}}></div>
-            Throughout my career, I have a proven track record of managing and building projects. I consistently adopt a business-oriented approach to software development, ensuring I understand users' and data requirements and work agilely to meet their demands. I have experience working independently and in cross-functional teams (both technical and non-technical members) to deliver solutions. Additionally, I founded my own company where I built MVPs, pitched ideas, secured grants, hired and led teams, and managed multiple stakeholders including investors, board members, teams, and alpha testing (at venues such as O2 Stadium, Harvey Nichols, Francis Crick Institute, and more).
-            <br /> */}
-            {/* <div style={{height: "1rem"}}></div>
-            During my career break, I enrolled in a bootcamp to learn machine learning and generative AI, which I have been integrating into software development.
-            <br />
-            <div style={{height: "1rem"}}></div>
-            As I prepare to return to work, I am eager to find a steady job where I can settle down and contribute to the company's success. I am enthusiastic about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other.
-            <br /> */}
-            {/* <div style={{height: "1rem"}}></div>
-            You can explore my GitHub page on by clicking <a href="https://bit.ly/3WkuP5M" target="_blank">here</a> */}
           </p>
           <div className="mt-6 flex gap-6">
           <SocialLink
@@ -253,14 +238,14 @@ function App() {
           </div>
         </div>
       </Container>
-      <Photos />
+      <Photos /> */}
 
       <SimpleLayout
         title="Work Experiences"
         >
           <ul
             role="list"
-            className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-x-12 gap-y-10 sm:grid-cols-2 lg:grid-cols-3"
           >
             {projects.map((project) => (
               <Card as="li" key={project.name}>
